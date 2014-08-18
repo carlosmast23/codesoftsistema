@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/principal.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Codesoft</title>
+<script>
+function subirimagen(op)
+{
+	nombrePagina='listaProductos';
+	self.name = 'opener';
+	remote = open('../gestionimagen.php?campo='+op+'&pagina='+nombrePagina, 'remote', 'width=400,height=150,location=no,scrollbars=yes,menubars=no,toolbars=no,resizable=yes,fullscreen=no, status=yes');
+ 	remote.focus();
+}
+
+</script>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="css/principal.css" rel="stylesheet" type="text/css" />
+<link href="css/menu-1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="cabezera">
+        	<div class="logo"/><!--fin logo -->
+       	        
+  </div><!--fin cabezera -->
+      
+      <div class="menuPrincipal">
+      		<div id="menu">           
+            
+      
+<ul>
+  <li class="nivel1"><a href="" class="nivel1">I N I C I O</a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 1<table class="falsa"><tr><td><![endif]-->
+	<ul>
+        <li><a href="index.php">Principal</a></li>
+		<li><a href="login.php">Iniciar Secion</a></li>
+        <li><a href="iniciarSesionVideo.php">Iniciar Secion Video</a></li>
+		<li><a href="nosotros.php">Nosotros</a></li>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+  </li>
+  <li class="nivel1"><a href="#" class="nivel1">P R O D U C T O S</a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 2<table class="falsa"><tr><td><![endif]-->
+	<ul>
+    	<?php include("includes/menuProductos.php");  ?>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+  <li class="nivel1"><a href="#" class="nivel1">S E R V I C I O S</a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 3<table class="falsa"><tr><td><![endif]-->
+	<ul>
+		<li><a href="ServicioMantenimiento.php">Mantenimiento CPu y Laptops</a></li>
+		<li><a href="servicioCelularesTablets.php">Celulares y Tablets</a></li>
+		<li><a href="serviciosAcademicos.php">Clases y Nivelacion</a></li>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+  <li class="nivel1"><a href="#" class="nivel1">C O N T E N I D O</a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 4<table class="falsa"><tr><td><![endif]-->
+	<ul>
+		<li><a href="#">Opci&oacute;n 4.1</a></li>
+		<li><a href="#">Opci&oacute;n 4.2</a></li>
+		<li><a href="#">Opci&oacute;n 4.3</a></li>
+		<li><a href="http://www.idplus.org">idplus.org</a></li>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+  <li class="nivel1"><a href="#" class="nivel1">A Y U D A </a>
+<!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 5<table class="falsa"><tr><td><![endif]-->
+	<ul>
+		<li><a href="contactos.php">Contactos</a></li>
+		<li><a href="#">Opci&oacute;n 5.2</a></li>
+		<li><a href="http://www.idplus.org">idplus.org</a></li>
+	</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+</ul>
+</div><!--fin menu -->
+        
+      </div><!--fin menuPrincipal -->
+      <!-- InstanceBeginEditable name="Slider" -->Slider<!-- InstanceEndEditable -->
+      
+      <div class="hojaTrabajo">
+      		<div class="contenido"><!-- InstanceBeginEditable name="Contenido" -->
+      		   <h3 align="center">Editar lista de Productos</h3>
+           <div align="center">
+           <form action="php/Grabar.php" method="post" name="form1" id="form1">
+           <table cellpadding="3" width="400" border="0">
+               <tr>
+                <td>Codigo Principal:</td>
+                <td><input name="CodigoPrincipal" type="text" value="0829160399829"  /></td>
+              </tr>
+              
+                <tr>
+                <td>Codigo Secundario:</td>
+                <td><input name="CodigoSecundario" type="text" value="3"  /></td>
+              </tr>
+              
+              <tr>
+                <td>Categoria:</td>
+                <td><select name="codCategoria">
+                	<option value='1'>Laptops</option><option value='2'>Accesorios Pc</option><option selected='selected' value='3'>Cartuchos</option><option value='5'>Accesorios Laptops</option><option value='6'>Tablet</option><option value='7'>Celulares</option><option value='8'>Impresoras</option>
+                </select>
+                
+                </td>
+              </tr>
+              
+              <tr>
+                <td>Nombre:</td>
+                <td><input name="Nombre" type="text" value="Cartucho Hp 96"  /></td>
+              </tr>
+              <tr>
+                <td>Marca:</td>
+                <td><input name="Marca" type="text" value="HP"  /></td>
+              </tr>
+              <tr>
+                <td>Modelo:</td>
+                <td><input name="Modelo" type="text" value="B815988708" /></td>
+              </tr>
+              <tr>
+                <td>Imagen</td>
+                <td><input  id="Imagen" name="Imagen" type="text"  />
+                <input type="button" name="button" id="button" value="Subir Imagen" onclick="javascript:subirimagen('Imagen');"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Garantia:</td>
+                <td><input value="0" name="Garantia" type="text" size="5" /></td>
+              </tr>
+              <tr>
+                <td>Precio Normal:</td>
+                <td><input value="25" name="PrecioNormal" type="text" size="10"/></td>
+              </tr>
+              <tr>
+                <td>Precio Destribuidor:</td>
+                <td><input value="0" name="PrecioDistribuidor" type="text" size="10" /></td>
+              </tr>
+              <tr>
+                <td>Precio Especial:</td>
+                <td><input value="0" name="PrecioEspecial" type="text" size="10" /></td>
+              </tr>
+              <tr>
+                <td>Tiene Codigo Unitario?</td>
+                <td><select name='Stock'><option value='-1'>Si</option><option selected='selected' value='0'>No</option></select></td>
+              </tr>
+              <tr>
+                <td valign="top">Caracteristica:</td>
+                <td><input value="" name="Caracteristica" type="text" /></td>
+              </tr>
+              
+              <tr>
+                <td valign="top">Fecha Lanzamiento:</td>
+                <td><input value="2014-01-01" name="fechaLanzamiento"  type="text" size="10" /></td>
+              </tr>
+              
+              <tr>
+                <td valign="top">Tiempo Util:</td>
+                <td><input value="0" name="tiempoUtil" type="text" size="7" /></td>
+              </tr>
+              
+              
+              <tr>
+                <td>Calificacion:</td>
+                <td><select name='Calificacion'><option selected='selected' >1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select></td>
+              </tr>
+              <tr>
+                <td>MostrarPublicidad:</td>
+                <td><select name='MostrarPublicidad'><option selected='selected' value='1'>Si</option><option value='2'>No</option></select>
+               </td>
+              </tr>
+              <tr>
+                <td>TituloPublicidad:</td>
+                <td><input value="" name="TituloPublicidad" type="text" /></td>
+              </tr>
+              <tr>
+                <td>SubtituloPublicidad:</td>
+                <td><input value="" name="SubtituloPublicidad" type="text" /></td>
+              </tr>
+              <tr>
+                <td valign="top">Descripcion:</td>
+                <td><textarea name="Descripcion" cols="20" rows=""></textarea></td>
+              </tr>
+              <tr>
+                <td>Vinculo:</td>
+                <td><input value="1" name="Vinculo" type="text" /></td>
+              </tr>
+              
+               <tr>
+                <td>IVA:</td>
+                <td><select name='IVA'><option value='1' selected='selected'>Si</option><option value='2'>No</option></select>
+                </td>
+              </tr>
+              
+              <tr>
+                <td></td>
+                <td><input name="" type="submit" value="G U A R D A R" style="background-color:#1d3a6e;color:#f8ef2d"/></td>
+              </tr>
+              
+            </table>
+            </form>
+			  </div>
+      		<!-- InstanceEndEditable -->
+          
+            </div><!--fin contenido -->
+            
+        <div class="otroContenido" >
+          <div class="login" align="center">
+          <div class="tituloLogin">Login</div><!--fin login -->
+            <table width="200" border="0">
+              <tr>
+                <td>Usuario:</td>
+                <td><form id="form1" name="form1" method="post" action="">
+                  <input type="text" name="textfield" id="textfield" />
+                </form></td>
+              </tr>
+              <tr>
+                <td>Clave:</td>
+                <td><input type="text" name="textfield2" id="textfield2" /></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td align="center"><form id="form2" name="form2" method="post" action="">
+                  <input class="boton" type="submit" name="button" id="button" value=" I n g r e s a r " />
+                </form></td>
+              </tr>
+            </table>
+          </div><!--fin login -->
+          <div class="noticia">
+          <div class="tituloNoticia">Noticia</div>
+            Aqui 
+            van 
+            a
+            ir
+            las
+            noticias
+            de codesoft            
+          </div>
+          
+          <div class="noticia">
+          <div class="tituloNoticia">Avizo</div>
+            Aqui puede
+            ir algun avizo a 
+            nuestros clientes
+          </div>
+          
+        <!-- InstanceBeginEditable name="otroContenido" --> otro contenido
+		<!-- InstanceEndEditable -->
+        </div><!--fin otroCOntenido -->
+                       
+      </div> <!--fin hojaTrabajo -->
+  <div class="piePagina">
+  			<div class="textoPiePagina" align="center"> 
+            Codesoft 2014 - todos los derechos reservados
+            </div>       <!--fin texto pie de pagina -->   	
+    </div><!--fin pie de pagina -->
+    </div> <!--fin contenedor -->
+	
+</body>
+<!-- InstanceEnd --></html>
