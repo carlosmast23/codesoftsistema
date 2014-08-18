@@ -1,0 +1,221 @@
+/* CSS Document */
+@charset "utf-8";
+
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	background-image: url(../img/fondoPrincipal.png);
+	background-repeat: repeat;
+}
+
+.contenedor
+{
+	width: 80%;
+	background-color: #cacee6;
+	margin: 0 auto;
+	max-width: 1260px;
+	min-width: 780px;
+	overflow: hidden;
+	border: 3px dotted #1d3a6e;
+}
+
+.contenedor .boton
+{
+	background-color: #1d3a6e;
+	border: 5px double #cacee6;
+	font-weight: bold;
+	color: #f8ef2d;
+}
+
+.cabezera
+{
+	background-image: url(../img/textura6jpg.jpg);
+}
+
+.cabezera .logo
+{
+	background-image: url(../img/codesoft.png);
+	height: 148px;
+	width: 548px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;	
+}
+
+.cabezera .login
+{
+	background-color: #063;
+	height: 100px;
+	width: 100px;	
+	float:right;
+}
+
+.menuPrincipal
+{
+	background-color: #FF0;
+	height: 50px;
+	margin-top: 5px;
+	padding-top: 5px;
+	
+}
+
+.hojaTrabajo
+{
+	background-color: #cacee6;
+	overflow: hidden;
+	margin-top: 10px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;	
+	font-size: 12px;
+	color: #1d3a6e;
+}
+
+.hojaTrabajo .contenido
+{
+	background-color: #FFF;
+	width: 68%;
+	float: left;
+	border: 4px dotted #cacee6;
+	padding: 5px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #1d3a6e;
+	font-size: 12px;
+}
+
+.hojaTrabajo .contenido h2
+{
+	background-color: #1d3a6e;
+	text-align: center;
+	color: #FFF;
+	background-image: url(../img/adornos/titulos.png);
+	background-repeat: repeat;
+	
+	padding-top: 5px;
+}
+
+.hojaTrabajo .contenido h1
+{
+	background-color: #1d3a6e;
+	text-align: center;
+	color: #FFF;
+	background-image: url(../img/adornos/titulos.png);
+	background-repeat: repeat;
+	
+	padding-top: 5px;
+}
+
+.hojaTrabajo .contenido h3
+{
+	background-color: #1d3a6e;
+	text-align: center;
+	color: #FFF;
+	background-image: url(../img/adornos/titulos.png);
+	background-repeat: repeat;
+	
+	padding-top: 5px;
+}
+
+
+
+
+
+.hojaTrabajo .otroContenido
+{
+	background-color: #FFF;
+	width: 28%;
+	float: right;
+	border: 4px dotted #cacee6;
+	overflow:hidden;
+}
+
+
+
+.hojaTrabajo .otroContenido .noticia
+{
+	width: 95%;
+	background-color: #1d3a6e;
+	height: 100px;
+	margin: 5px;
+	padding: 2px;
+	color: #1d3a6e;
+	float: left;
+	background-image: url(../img/textura6jpg.jpg);
+	background-repeat: repeat-x;
+	border: 2px groove #1d3a6e;
+}
+
+.hojaTrabajo .otroContenido .noticia .tituloNoticia
+{
+	background-color: #1d3a6e;
+	color: #FFF;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 13px;
+}
+
+.hojaTrabajo .otroContenido .login
+{
+	width: 95%;
+	background-color: #cacee6;
+	height: 110px;
+	margin: 5px;
+	padding: 2px;
+	color: #1d3a6e;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	background-image: url(../img/textura6jpg.jpg);
+	background-repeat: repeat-x;
+	border: 2px groove #FF0;
+}
+
+
+
+.hojaTrabajo .otroContenido .login .boton
+{
+		background:#1d3a6e;
+		color:#FFF;
+		font-weight: bold;	
+		
+		
+}
+
+.hojaTrabajo .otroContenido .login .tituloLogin
+{
+	background-color: #f8ef2d;
+	color: #1d3a6e;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.piePagina
+{
+	height: 50px;
+	background-color: #FF0;
+	margin-top: 10px;
+	
+}
+
+.textoPiePagina
+{
+	font-size: 14px;
+	font-style: normal;
+	color: #1d3a6e;
+	padding-top: 15px;
+	font-weight: bold;
+}
+
+.imagenCambiando
+{
+	background-color: #FFF;	
+}
+
+.espacioSlider
+{
+	background-color: #FFF;
+	height: 250px;
+	width: 989px;
+	margin-right: auto;
+	margin-left: auto;
+}
