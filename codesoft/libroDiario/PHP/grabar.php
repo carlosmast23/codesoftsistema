@@ -22,9 +22,11 @@ class Grabar extends Controlador
     
     public function ejecutar() 
     {
-           
-                  
-            $entidad=new libroDiario(0,$_POST['cantidad'],$_POST['tipo'],$_POST['comentario'],$_POST['fecha'],$_POST['id_libro']);
+             
+        
+            $fecha=date("o-m-y h:i:s");
+             
+            $entidad=new libroDiario(0,$_POST['cantidad'],$_POST['tipo'],$_POST['comentario'],$fecha,$_POST['id_libro']);
             $this->conexion->grabar($entidad);
             $id=mysql_insert_id();
             echo $id;

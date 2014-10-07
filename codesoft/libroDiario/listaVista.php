@@ -82,12 +82,12 @@
       
       <div class="hojaTrabajo">
       		<div class="contenido"><!-- InstanceBeginEditable name="Contenido" -->
-  <table width="50%" border="0">
+  <table width="30%" border="0">
   <tr>
     <td><form action="PHP/crearLibroDiario.php" method="get"><INPUT type="submit" class="boton" value="Nuevo Libro Diario" id="nuevo" ></form></td>  
   </tr>
 </table>
-<table width="100%" border="1" class="contenedor" id="tablaLibros">
+<table width="100%"  border="1" class="contenedor" id="tablaLibros">
   <tr>
     <td>Codigo</td>
     <td>Fecha</td>
