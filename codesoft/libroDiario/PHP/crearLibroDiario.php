@@ -24,7 +24,7 @@ class crearLibroDiario extends Controlador
     {
            
             $fecha= date("o-m-d");
-            $consulta=  $this->conexion->consultaLibre("select fecha from librodiario where fecha='".$fecha."'");
+            $consulta=  $this->conexion->consultaLibre("select fecha from LIBRODIARIO where fecha='".$fecha."'");
             $fila=  mysql_fetch_array($consulta);
             
      
