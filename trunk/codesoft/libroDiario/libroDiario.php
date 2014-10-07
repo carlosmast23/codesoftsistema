@@ -162,7 +162,7 @@ var cantidad=document.getElementById("cantidad").value;
 var tipo=document.getElementById("opcion").value;
 var comentario=document.getElementById("comentarios").value;
 var id_libro=document.getElementById("id_libro").value;
-var fecha="2014-10-02";
+var fecha="";
 
 
 
@@ -322,7 +322,7 @@ $.ajax({
   [datosTotales]
 </table>
 
-
+<p align="right"><a href='lista.php'  >Regresar<a/></p>
 
               
       		<!-- InstanceEndEditable -->

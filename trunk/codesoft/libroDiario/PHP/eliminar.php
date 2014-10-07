@@ -22,7 +22,7 @@ class eliminar extends Controlador {
     }
     public function ejecutar() {
     
-       $this->conexion->consultaLibre("delete from libroitems where id_Items='". $_REQUEST['codigo'] . "'"); 
+       $this->conexion->consultaLibre("delete from LIBROITEMS where id_Items='". $_REQUEST['codigo'] . "'"); 
        
         if(strcmp($_POST['tipo'],"Ingresos")==0)
                 {

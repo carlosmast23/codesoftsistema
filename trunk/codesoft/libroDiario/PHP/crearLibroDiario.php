@@ -23,14 +23,23 @@ class crearLibroDiario extends Controlador
     public function ejecutar() 
     {
            
-            $fecha= date("y-m-d");
-           
-            $entidad=new libroGeneral(0,$fecha,0,0,0);
-            $this->conexion->grabar($entidad);
+            $fecha= date("o-m-d");
+            $consulta=  $this->conexion->consultaLibre("select fecha from librodiario where fecha='".$fecha."'");
+            $fila=  mysql_fetch_array($consulta);
             
-           
+     
+                        
+                if($fila==NULL){
+                
+                    $entidad=new libroGeneral(0,$fecha,0,0,0);
+                    $this->conexion->grabar($entidad);
+                }else{
+            
+                 echo("<script> alert('dfsdf');</script>");
+            
+                }
+            
             header("Location:../lista.php");
-           
             
     }
 

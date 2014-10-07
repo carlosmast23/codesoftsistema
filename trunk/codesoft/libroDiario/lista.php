@@ -22,6 +22,7 @@ class lista extends ControladorSet {
      
      $consulta=  $this->conexion->consultaLibre("SELECT *FROM LIBRODIARIO");
      $fila=  mysql_fetch_array($consulta);
+    
      $codigoHtml="";
     
      
@@ -37,7 +38,7 @@ class lista extends ControladorSet {
         
         if(strcmp($fecha,$fila[1])==0){
           //echo("<script> alert('->".$fecha."<-'+'->".$fila[1]."<-'); </script>");  
-          $codigoHtml=$codigoHtml."<td><a href='diario.php?codigo=".$fila[0]."' >Agregar<a/></td>";
+          $codigoHtml=$codigoHtml."<td> <a href='diario.php?codigo=".$fila[0]."' >Agregar<a/></td>";
          } 
         $codigoHtml=$codigoHtml."</tr>";
          

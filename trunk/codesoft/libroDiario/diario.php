@@ -32,12 +32,14 @@ class diario extends ControladorSet{
      
      do{
         
+         $tfecha=$filal[1];
          $tingresos=$filal[2];
          $tegresos=$filal[3];
          $tcaja=$filal[4];
          
         
     }while(mysql_fetch_array($consultaL));
+    
      if(mysql_num_rows($consulta)>0)
      do
      {
