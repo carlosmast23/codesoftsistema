@@ -29,6 +29,7 @@ class diario extends ControladorSet{
      $tingresos=0;
      $tegresos=0;
      $tcaja=0;
+     $fecha=date("o-m-d");
      
      do{
         
@@ -69,12 +70,14 @@ class diario extends ControladorSet{
      
      $this->diccionario["datosTotales"]=$codigoHtml;
      $this->diccionario["codigo"]=$_REQUEST['codigo'];
-     $this->diccionario["totalI"]=$tingresos;
-     $this->diccionario["totalE"]=$tegresos;
-     $this->diccionario["totalC"]=$tcaja;
-     $this->diccionario["ingreso"]=$tingresos;
-     $this->diccionario["egreso"]=$tegresos;
-     $this->diccionario["caja"]=$tcaja;
+     $this->diccionario["totalI"]=  number_format($tingresos ,2);
+     $this->diccionario["totalE"]=number_format($tegresos ,2);
+     $this->diccionario["totalC"]=number_format($tcaja ,2);;
+     $this->diccionario["ingreso"]=number_format($tingresos ,2);;
+     $this->diccionario["egreso"]=number_format($tegresos ,2);
+     $this->diccionario["caja"]=number_format($tcaja ,2);;
+     $this->diccionario["hora"]=$fecha;
+     
      
     }
 
@@ -88,7 +91,8 @@ class diario extends ControladorSet{
            "totalC"=>"", 
            "ingreso"=>"",
            "egreso"=>"",
-           "caja"=>"", 
+           "caja"=>"",
+           "hora"=>"", 
        );
     }
 

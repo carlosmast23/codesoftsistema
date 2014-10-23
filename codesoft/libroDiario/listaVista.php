@@ -16,7 +16,7 @@
 <body>
 <div class="contenedor">
   <div class="cabezera">
-        	<div class="logo"/><!--fin logo -->
+        	<div class="logo"><!--fin logo -->
        	        
   </div><!--fin cabezera -->
       
@@ -86,18 +86,21 @@
   <tr>
     <td><form action="PHP/crearLibroDiario.php" method="get"><INPUT type="submit" class="boton" value="Nuevo Libro Diario" id="nuevo" ></form></td>  
   </tr>
+  
 </table>
-<table width="100%"  border="1" class="contenedor" id="tablaLibros">
+<div style="background:#006"><table width="80%"  border="1" class="contenedor" id="tablaLibros">
   <tr>
-    <td>Codigo</td>
-    <td>Fecha</td>
-    <td>Total Ingresos</td>
-    <td>Total Egresos</td>
-    <td>Total Caja</td>
+    <td width="15%">Codigo</td>
+    <td width="15%">Fecha</td>
+    <td width="15%">Total Ingresos</td>
+    <td width="15%">Total Egresos</td>
+    <td width="10%">Total Caja</td>
+    <td ></td>
   </tr>
   [datosTabla]
   
-</table>
+</table></div>
+
 
 
 

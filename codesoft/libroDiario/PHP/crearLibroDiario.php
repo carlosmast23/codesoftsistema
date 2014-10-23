@@ -35,7 +35,7 @@ class crearLibroDiario extends Controlador
                     $this->conexion->grabar($entidad);
                 }else{
             
-                 echo("<script> alert('dfsdf');</script>");
+                 //echo("<script> alert('dfsdf');</script>");
             
                 }
             
