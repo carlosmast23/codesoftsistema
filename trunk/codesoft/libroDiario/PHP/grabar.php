@@ -3,7 +3,7 @@ include_once '../../Core/Conexion.php';
 include_once '../../Core/Controlador.php';
 include_once '../../Core/InterfazDatos.php';
 
-include_once '../../Admin/entidades/libroDiario.php';;
+include_once '../../Admin/entidades/libroDiario.php';
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.

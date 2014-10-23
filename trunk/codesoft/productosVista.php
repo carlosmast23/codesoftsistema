@@ -28,7 +28,7 @@
 <!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 1<table class="falsa"><tr><td><![endif]-->
 	<ul>
         <li><a href="index.php">Principal</a></li>
-		<li><a href="login.php">Iniciar Secion</a></li>
+		<li><a href="login/login.php">Iniciar Secion</a></li>
         <li><a href="iniciarSesionVideo.php">Iniciar Secion Video</a></li>
 		<li><a href="nosotros.php">Nosotros</a></li>
 	</ul>

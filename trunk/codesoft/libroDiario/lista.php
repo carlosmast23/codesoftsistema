@@ -35,10 +35,11 @@ class lista extends ControladorSet {
         $codigoHtml=$codigoHtml."<td>".$fila[1]."</td>";
         $codigoHtml=$codigoHtml."<td>".$fila[2]."</td>";
         $codigoHtml=$codigoHtml."<td>".$fila[3]."</td>";
+        $codigoHtml=$codigoHtml."<td>".$fila[4]."</td>";
         
         if(strcmp($fecha,$fila[1])==0){
           //echo("<script> alert('->".$fecha."<-'+'->".$fila[1]."<-'); </script>");  
-          $codigoHtml=$codigoHtml."<td> <a href='diario.php?codigo=".$fila[0]."' >Agregar<a/></td>";
+          $codigoHtml=$codigoHtml."<td> <a href='diario.php?codigo=".$fila[0]."'>Agregar<a/> </td>";
          } 
         $codigoHtml=$codigoHtml."</tr>";
          

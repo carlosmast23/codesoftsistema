@@ -14,7 +14,7 @@
 <body>
 <div class="contenedor">
   <div class="cabezera">
-        	<div class="logo"/><!--fin logo -->
+        	<div class="logo"><!--fin logo -->
        	        
   </div><!--fin cabezera -->
       

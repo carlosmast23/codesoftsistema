@@ -207,7 +207,7 @@ $.ajax({
 <body>
 <div class="contenedor">
   <div class="cabezera">
-        	<div class="logo"/><!--fin logo -->
+        	<div class="logo"><!--fin logo -->
        	        
   </div><!--fin cabezera -->
       
@@ -281,6 +281,7 @@ $.ajax({
     <td>SELECCIONE</td>
     <td>COMENTARIOS</td>
   </tr>
+  <div align="right" style="border:double">[hora]</div>
   <tr>
     <td><INPUT type=text name="cantidad" id="cantidad"></td>
     <td><select name="opcion" id="opcion">

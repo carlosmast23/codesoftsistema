@@ -4,6 +4,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Codesoft</title>
+
+<?php
+session_start();
+if(isset($_SESSION))
+  session_destroy();
+       
+	    if(isset($_GET['error'])){
+            
+            if(strcmp($_GET['error'],"1")==0){
+               
+                echo('<script> alert("El usuario o contrasenia son incorrectos"); </script>');
+                    $_GET['error']="0";
+            }  
+            
+        }else{
+            $_GET['error']="0";
+            
+        }
+      
+       
+  ?>
+            
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -27,7 +49,7 @@
 <!--[if lte IE 6]><a href="#" class="nivel1ie">Opción 1<table class="falsa"><tr><td><![endif]-->
 	<ul>
         <li><a href="index.php">Principal</a></li>
-		<li><a href="login.php">Iniciar Secion</a></li>
+		<li><a href="login/login.php">Iniciar Secion</a></li>
         <li><a href="iniciarSesionVideo.php">Iniciar Secion Video</a></li>
 		<li><a href="nosotros.php">Nosotros</a></li>
 	</ul>
@@ -79,24 +101,28 @@
   			<h2> Login </h2>
             </br>
             </br>
-            <div align="center">
-            <img src="images/tuerca.jpg" width="221" height="72" />
+<form action="php/verificarLogin.php" method="post">             
+<div align="center">
+            <img src="../images/tuerca.jpg" width="221" height="72" />
+            
 <table width="200" border="0" cellpadding="3" cellspacing="5">
           <tr>
             <td>Usuario:</td>
-            <td><input name="" type="text" /></td>
+            <td><input name="usuario" type="text" /></td>
           </tr>
           <tr>
             <td>Clave:</td>
-            <td><input name="" type="text" /></td>
+            <td><input name="clave" type="password" /></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
-            <td align="center"><input name="" type="button" value=" I n g r e s a r " class="boton" /></td>
+            <td align="center"><input name="" type="submit" value=" I n g r e s a r " class="boton" /></td>
           </tr>
         </table>
         </div>
-
+</form>
+            
+            
 		
       		<!-- InstanceEndEditable -->
           

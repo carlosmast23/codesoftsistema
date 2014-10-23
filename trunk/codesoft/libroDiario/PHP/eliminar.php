@@ -28,15 +28,15 @@ class eliminar extends Controlador {
                 {
                 
                  $consulta=  $this->conexion->consultaLibre("UPDATE LIBRODIARIO"
-                                    ." SET TOTALINGRESOS = TOTALINGRESOS +'".$_POST['cantidad']."'
-                                        , TOTALCAJA= TOTALCAJA+'".$_POST['cantidad']."'
+                                    ." SET TOTALINGRESOS = TOTALINGRESOS -'".$_POST['cantidad']."'
+                                        , TOTALCAJA= TOTALCAJA-'".$_POST['cantidad']."'
                                         WHERE ID_LIBRO='".$_REQUEST['id_libro']."'");
                 
             }else{
             
             $consulta=  $this->conexion->consultaLibre("UPDATE LIBRODIARIO"
-                                    ." SET TOTALEGRESOS = TOTALEGRESOS +'".$_POST['cantidad']."'
-                                        , TOTALCAJA= TOTALCAJA-'".$_POST['cantidad']."'
+                                    ." SET TOTALEGRESOS = TOTALEGRESOS -'".$_POST['cantidad']."'
+                                        , TOTALCAJA= TOTALCAJA+'".$_POST['cantidad']."'
                                         WHERE ID_LIBRO='".$_REQUEST['id_libro']."'");
             }
                 
